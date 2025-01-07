@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    background-color: #0b0f2c;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    color: #ffffff;
+    background-color: #0b0f2c;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .committee-button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    background-color: #fff;
+    color: #1e40af;
+    border: 2px solid #1e40af;
+    box-shadow: 0px 4px 6px rgba(13, 1, 83, 0.1);
+  }
+  .committee-button:hover {
+    opacity: 0.9;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .members-flex {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .patron .members-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .patron .row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .patron .row-single {
+    max-width: 80%;
+  }
+  
+  .patron .row-two {
+    max-width: 60%; 
+  }
+  
+  .patron .row-three {
+    max-width: 80%;
+  }
+  .patron .members-flex .cardTeam {
+    width: 25vw;
+  }
+  
+  .copatron .members-flex {
+    flex-direction: row; 
+    justify-content: center;
+  }
+  
+  .active{
+    background-color: #1b2648;
+    color: #fff;
+    
+  }
+  .cardTeam {
+    background-color: #0b0f2c;
+    padding: 24px;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgb(26 14 142);
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 25%;
+    
+  }
+  
+  .cardTeam:hover {
+    transform: scale(1.01);
+  }
+  
+  .card-image {
+    width: 96px;
+    height: 96px;
+    background-color: #0b0f2c;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00aaff;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card-position {
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 0px) and (max-width:462px){
+    .patron .row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+    .patron .members-flex .cardTeam {
+      width: 65vw;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    
+  }
+  @media (min-width:462px) and (max-width:592px){
+    .patron .members-flex .cardTeam {
+      width: 45vw;
+    }
+    .patron .row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .copatron .members-flex {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 1024px) {
+    .patron .members-flex {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  
+    .patron .row {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
